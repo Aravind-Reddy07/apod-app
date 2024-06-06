@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #5c5f60;
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  font-family: "Anton", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.input-date {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.view-btn {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-btn:hover {
+    background-color: rgb(168, 169, 170); 
+}
+
+.apod-container {
+    margin-top: 20px;
+}
+
+.apod-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.image-desc{
+    padding:20px;
+    background-color: #434345;
+    color: white;
+    text-align: left;
+    line-height: 1.5;
+    border-radius: 5px;
+}
+
+.image-title{
+
+    background-color: rgb(231, 231, 231);
+    color: black;
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
