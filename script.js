@@ -21,28 +21,12 @@ async function fetchData(date) {
 }
 
 function displayImage(data) {
-  apodTitle.textContent = "";
-  apodDesc.textContent = "";
-  apodImg.src = "";
   setTimeout(() => {
     apodTitle.textContent = data.title;
     apodDesc.innerHTML = "";
     apodImg.style.transition = "ease-in 1s";
     apodImg.src = data.url;
     animateText(data.explanation);
-    if (data.hasOwnProperty("photographer")) {
-      const photographer = document.createElement("p");
-      photographer.textContent = `Photographer: ${data.photographer}`;
-      if (data.hdurl) {
-        const link = document.createElement("a");
-        link.href = data.hdurl;
-        link.target = "_blank";
-        link.appendChild(photographer);
-        apodDesc.appendChild(link);
-      } else {
-        apodDesc.appendChild(photographer);
-      }
-    }
   }, 500);
 }
 
