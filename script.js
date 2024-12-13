@@ -8,6 +8,12 @@ const apodTitle = document.querySelector(".image-title");
 const apodDesc = document.querySelector(".image-desc");
 
 async function fetchData(date) {
+
+    const today= new Date().toISOString().slice(0, 10);
+    if(today<date){
+        alert('Please enter a date from past')
+    } 
+    else{
   try {
     const response = await fetch(
       `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=${date}`
@@ -19,13 +25,14 @@ async function fetchData(date) {
     console.error(error.message);
   }
 }
+}
 
 function displayImage(data) {
-  setTimeout(() => {
     apodTitle.textContent = data.title;
     apodDesc.innerHTML = "";
     apodImg.style.transition = "ease-in 1s";
     apodImg.src = data.url;
+  setTimeout(() => {
     animateText(data.explanation);
   }, 500);
 }
