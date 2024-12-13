@@ -43,7 +43,7 @@ function animateText(text) {
   }, 100);
 }
 
-btnView.addEventListener("click", () => {
+inputDate.addEventListener("change", () => {
   const date = inputDate.value;
   if (date) {
     fetchData(date);
