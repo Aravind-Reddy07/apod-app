@@ -5,7 +5,7 @@ body {
     box-sizing: border-box;
     background-color: #5c5f60;
     color: rgb(255, 255, 255);
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
 }
 
 .container {
@@ -55,12 +55,6 @@ body {
 }
 
 .image-title{
-
-    background-color: rgb(231, 231, 231);
-    color: black;
+    color: white;
     max-width: 50%;
-    margin: 0 auto;
-    padding: 10px;
-    border-radius: 5px;
-    border: 2px solid black;
 }
